@@ -51,7 +51,7 @@ app.get('/', (request, response) => response.send('OK'));
 app.use('/api', router);
 
   // this array is used for identification of allowed origins in CORS
-  const originWhitelist = ['http://localhost:4200'];
+  const originWhitelist = ['http://localhost:4200', 'http://localhost:8080'];
 
   // middleware CORS handling route that all requests pass through
   router.use((request, response, next) => {
