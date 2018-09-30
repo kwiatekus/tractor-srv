@@ -1,0 +1,8 @@
+---
+applications:
+- name: tractor-srv
+  command: node index.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  memory: 64M
+  disk_quota: 64M
+  
