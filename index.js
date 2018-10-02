@@ -51,7 +51,12 @@ app.get('/', (request, response) => response.send('OK'));
 app.use('/api', router);
 
   // this array is used for identification of allowed origins in CORS
-  const originWhitelist = ['https://luigidemosapui5-i303803trial.dispatcher.hanatrial.ondemand.com','http://localhost:4200', 'http://localhost:8080'];
+  const originWhitelist = [
+    'https://dist-i303803trial.dispatcher.hanatrial.ondemand.com',
+    'https://luigidemosapui5-i303803trial.dispatcher.hanatrial.ondemand.com',
+    'http://localhost:4200',
+    'http://localhost:8080'
+];
 
   // middleware CORS handling route that all requests pass through
   router.use((request, response, next) => {
