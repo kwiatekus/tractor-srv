@@ -54,6 +54,7 @@ app.use('/api', router);
   const originWhitelist = [
     'https://dist-i303803trial.dispatcher.hanatrial.ondemand.com',
     'https://luigidemosapui5-i303803trial.dispatcher.hanatrial.ondemand.com',
+    'https://luigi-module-vue.us-east.stage.cf.yaas.io',
     'http://localhost:4200',
     'http://localhost:8080'
 ];
